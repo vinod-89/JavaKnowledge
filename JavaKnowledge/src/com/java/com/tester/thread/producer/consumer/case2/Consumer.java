@@ -23,7 +23,7 @@ public class Consumer implements Runnable {
                 try {
                     Integer i = listOfItems.take();
                     System.out.println("Consumer : " + i);
-                    ThreadUtils.ONE_SECOND;
+                   // ThreadUtils.ONE_SECOND;
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

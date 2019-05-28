@@ -2,20 +2,20 @@ package com.designpattern;
 
 public class GC {
 	
-	This behavior was used to improve the performance of JVM, and the adopted methodology is 
-	commonly called Generational Garbage Collection. In this method, 
-	the Heap space is divided into generations like Young Generation, Old or Tenured Generation, and Permanent Generation.
+//	This behavior was used to improve the performance of JVM, and the adopted methodology is
+//	commonly called Generational Garbage Collection. In this method,
+//	the Heap space is divided into generations like Young Generation, Old or Tenured Generation, and Permanent Generation.
 //	So, the four types of garbage collectors are:
 //
 //		Serial GC
 //		This is the simplest garbage collector, designed for single threaded systems and small heap size. It freezes all applications while working. Can be turned on using -XX:+UseSerialGC JVM option.
 //
 //		Parallel/Throughput GC
-//		This is JVM’s default collector in JDK 8. As the name suggests, it uses multiple threads to scan through the heap space and perform compaction. A drawback of this collector is that it pauses the application threads while performing minor or full GC.
+//		This is JVM?s default collector in JDK 8. As the name suggests, it uses multiple threads to scan through the heap space and perform compaction. A drawback of this collector is that it pauses the application threads while performing minor or full GC.
 //		It is best suited if applications that can handle such pauses, and try to optimize CPU overhead caused by the collector.
 //
 //		The CMS collector
-//		The CMS collector (“concurrent-mark-sweep”) algorithm uses multiple threads (“concurrent”) to scan through the heap (“mark”) for unused objects that can be recycled (“sweep”).
+//		The CMS collector (?concurrent-mark-sweep?) algorithm uses multiple threads (?concurrent?) to scan through the heap (?mark?) for unused objects that can be recycled (?sweep?).
 //
 //		This collector goes in Stop-The-World(STW) mode in two cases:
 //		-While initializing the initial marking of roots, ie. objects in the old generation that are reachable from thread entry points or static variables

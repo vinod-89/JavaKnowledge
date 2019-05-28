@@ -27,7 +27,7 @@ public class Consumer implements Runnable {
                 } else {
                     String removeItems = stringList.remove(0);
                     System.out.println("Consumer : " + removeItems);
-                    ThreadUtils.ONE_SECOND
+                    //ThreadUtils.ONE_SECOND
                     stringList.notifyAll();
                 }
             }

@@ -34,7 +34,6 @@ public class Producer implements Runnable {
                 System.out.println("Produce : ==>(" + itemId + ").");
                 listOfItems.add(itemId);
                 lockObject.notifyAll();
-                ThreadUtils.TWO_SECOND;
 
             }
         }

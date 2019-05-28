@@ -32,7 +32,7 @@ public class Producer implements Runnable {
                     String addItems = String.valueOf(itemNumber.getAndIncrement());
                     System.out.println("Produce : " + addItems);
                     stringList.add(addItems);
-                    ThreadUtils.ONE_SECOND
+                  //  ThreadUtils.ONE_SECOND
                     stringList.notifyAll();
                 }
             }
